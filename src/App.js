@@ -11,7 +11,7 @@ const [bots,setBots]= useState([]);
 const [armyCart, setArmyCart] = useState([]);
 
   useEffect(() =>{
-    fetch('http://localhost:3000/bots')
+    fetch('https://phase2-bot-batlr-6.onrender.com')
     .then(response => response.json())
     .then((data) =>{
       setBots(data);
