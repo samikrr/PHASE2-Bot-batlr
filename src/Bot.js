@@ -1,7 +1,7 @@
 function Bot({ bot, onUpdateBot, onDeleteBot }) {
     function handleAddToCartClick() {
       // add fetch request
-      fetch(`https://phase2-bot-batlr-6.onrender.com/${bot.id}`, {
+      fetch(`https://phase2-bot-batlr-6.onrender.com/bots/${bot.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

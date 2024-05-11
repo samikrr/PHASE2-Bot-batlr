@@ -11,7 +11,7 @@ function BotForm({ onAddBot }) {
           category: category,
           isInCart: false,
         };
-        fetch("https://phase2-bot-batlr-6.onrender.com", {
+        fetch("https://phase2-bot-batlr-6.onrender.com/bots", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
