@@ -6,7 +6,7 @@ import BotForm from './BotForm';
 import Bot from './Bot';
 
 function App() {
- const [selectedCategory, setSelectedCategory] = useState("All");
+ const [selectedCategory, ] = useState("All");
 const [bots,setBots]= useState([]);
 const [armyCart, setArmyCart] = useState([]);
 
@@ -43,9 +43,7 @@ const [armyCart, setArmyCart] = useState([]);
     setBots([...bots, newBot])  ;
   }
 
-  function handleCategoryChange(category) {
-    setSelectedCategory(category);
-  }
+  
 
   const botsToDisplay = bots.filter((bot) => {
     if (selectedCategory === "All") return true;
